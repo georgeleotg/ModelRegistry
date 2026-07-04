@@ -132,8 +132,7 @@ runs = mlflow.search_runs(
     order_by=["start_time DESC"],
     filter_string="status='FINISHED' AND "
     f"start_time>{time_hour_ago} AND "
-    "run_name LIKE '%demo-run%' AND "
-    "metrics.metric3>0",
+    "run_name LIKE '%demo-run%'",
 )
 
 # COMMAND ----------
