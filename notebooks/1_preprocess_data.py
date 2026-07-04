@@ -1,4 +1,13 @@
 # Databricks notebook source
+print("Hola mundo")
+
+# COMMAND ----------
+
+# MAGIC %sql
+# MAGIC select *
+
+# COMMAND ----------
+
 # MAGIC %pip install ..
 
 # COMMAND ----------
@@ -47,8 +56,8 @@ schema = cfg.schema
 # COMMAND ----------
 
 # Create catalog and schema if they do not exist
-# spark.sql(f"CREATE CATALOG IF NOT EXISTS {catalog}")
-# spark.sql(f"CREATE SCHEMA IF NOT EXISTS {catalog}.{schema}")
+# spark.sql(f"CREATE CATALOG IF NOT EXISTS {mlops_dev}")
+# spark.sql(f"CREATE SCHEMA IF NOT EXISTS {mlops_dev}.{hotel_booking}")
 
 
 # COMMAND ----------
